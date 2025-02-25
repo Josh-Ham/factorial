@@ -17,7 +17,7 @@ class Testing(unittest.TestCase):
       "test1e" : (9,362880)
     }
 
-    for name, (result, argument) in trials.items():
+    for name, (argument, result) in trials.items():
       with self.subTest(name=name):
         hdrs = {"Content-Type":"application/json"}
         js   = {"argument":argument}
